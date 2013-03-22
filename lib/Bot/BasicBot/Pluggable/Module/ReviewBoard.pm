@@ -152,7 +152,7 @@ sub told {
 
 	$regexp =~ s{ %RB_URL% }{ $rb_url }xg;
 	if ( $message->{body} =~ m{ $regexp }ix ) {
-		if ( my $rb = $+{rb} =~ m{^\d+$} ) {
+		if ( ( my $rb = $+{rb} ) =~ m{^\d+$} ) {
 			return $self->_rb_message( $self->_get_rb_data( $rb ) );
 		}
 		else {
