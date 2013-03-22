@@ -5,7 +5,7 @@ use warnings;
 
 # ABSTRACT: Review Board Basic Bot IRC plugin
 
-BEGIN { $Bot::BasicBot::Pluggable::Module::ReviewBoard::VERSION = '1.0.0' }
+BEGIN { $Bot::BasicBot::Pluggable::Module::ReviewBoard::VERSION = '1.0.1' }
 
 use base qw(Bot::BasicBot::Pluggable::Module);
 
